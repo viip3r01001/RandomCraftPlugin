@@ -2,7 +2,7 @@ name: Build Plugin
 on: [push, pull_request]  # Déclenche la compilation à chaque push ou PR
 
 jobs:
-  build:
+on: [push, pull_request]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout du repo
