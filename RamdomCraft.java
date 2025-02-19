@@ -4,7 +4,7 @@
 {\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
 \paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
 \deftab720
-  
+
 \pard\pardeftab720\partightenfactor0
 \f0\fs26 \cf0 \expnd0\expndtw0\kerning0
 src/main/java/com/example/randomcraft/RandomCraft.java\
