@@ -18,7 +18,7 @@ jobs:
         run: mvn clean package
 
       - name: Upload du JAR compilé
-  uses: actions/upload-artifact@v4
+  actions/upload-artifact@v4
   with:
     name: RandomCraft
     path: target/*.jar
