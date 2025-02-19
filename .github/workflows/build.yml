@@ -1,7 +1,9 @@
 name: Build Plugin
-on: [push, pull_request]  # Déclenche la compilation à chaque push ou PR
+
+on: [push, pull_request] # Déclenche la compilation à chaque push ou PR
 
 jobs:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout du repo
@@ -16,9 +18,5 @@ jobs:
       - name: Build avec Maven
         run: mvn clean package
 
-     - name : Upload du JAR compilé
-  actions/upload-artifact@v4
-
-  with:
-    name: RandomCraft
-    path: target/*.jar
+      - name: Upload du JAR compilé
+        uses: actions/upload-artifact@v4
