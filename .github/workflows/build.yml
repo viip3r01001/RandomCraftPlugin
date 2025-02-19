@@ -17,8 +17,9 @@ jobs:
       - name: Build avec Maven
         run: mvn clean package
 
-      - name: Upload du JAR compilé
+     - nom : Upload du JAR compilé
   actions/upload-artifact@v4
+
   with:
     name: RandomCraft
     path: target/*.jar
